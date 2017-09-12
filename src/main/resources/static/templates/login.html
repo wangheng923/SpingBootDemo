@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>login</title>
+<style>
+.error {
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	color: #a94442;
+	background-color: #f2dede;
+	border: 1px solid #ebccd1;
+}
+
+.msg {
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	color: #31708f;
+	background-color: #d9edf7;
+	border: 1px solid #bce8f1;
+}
+
+#login-box {
+	width: 300px;
+	padding: 20px;
+	margin: 100px auto;
+	background: #d9edf7;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border: 1px solid #000;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+.loginform {
+	margin: 10px auto;
+}
+td {
+	margin-right:5px;
+}
+input {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border: 1px solid #ccc;
+}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+	<div id="login-box">
+		<h1>Spring Security 自定义登录页面</h1>
+		<!-- <form name='loginForm' action="/logina" method='POST'>
+			
+		</form> -->
+			<table class="loginform">
+				<tr>
+					<td>用户名:</td>
+					<td><input type='text' name='username' id="username"/></td>
+				</tr>
+				<tr>
+					<td>密    码:</td>
+					<td><input type='password' name='password' id="password"/></td>
+				</tr>
+				<tr>
+					<td colspan='2'><input type="button" value="提交" id="submitBtn"/></td>
+				</tr>
+			</table>
+	</div>
+</body>
+</html>
